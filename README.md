@@ -93,26 +93,48 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 
 ---
 
-## 📂 Project Structure
-
-```bash
-Project-Legion-Robot/
+## 📂 Code Structure
+Below is the organized structure of the code directory:
+Codes/
 │
-├── hardware/
-│   ├── 3d-models/
-│   ├── circuit-diagrams/
+├── ARDUINO/
+│   ├── Arduino with ESPCam/
+│   │   ├── legionEye        (Upload to Arduino)
+│   │   └── legion_ESP       (Upload to ESP32-CAM)
+│   │
+│   ├── Arduino with Servo Driver/
+│   │   ├── legion_with_driver
+│   │   └── Servo_Config_driver
+│   │
+│   └── Arduino without Servo Driver/
+│       ├── legion
+│       └── Servo_Config
 │
-├── software/
-│   ├── arduino/
-│   ├── esp32/
-│   ├── raspberry-pi/
+├── ESP32/
+│   └── ⚠️ Under development (FlexiTimer2 not supported)
 │
-├── media/
-├── docs/
-└── README.md
+└── RPI
+    └── codes
+        ├── templates
+        ├── __pycache__
+        ├── kinematics.py          (Movement calculations)
+        ├── main.py                (Demo control script)
+        ├── object_detection.py    (Experimental (WIP))
+        ├── server.py              (Flask server for WiFi control)
+        └── servo_config.py        (Initial servo configuration)
 ```
 
----
+
+## 🧠 Notes
+
+* 📌 Arduino versions are divided based on hardware setup
+* ⚠️ ESP32 version is still under development
+* 🧠 Raspberry Pi version supports **AI/ML + WiFi control**
+* 🔧 `servo_config` files are important for **initial calibration (90° setup)**
+
+
+
+--
 
 ## 📁 Resources
 
