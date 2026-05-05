@@ -68,16 +68,7 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 * Designed for AI/ML integration
 * Uses Raspberry Pi 4
 
----
-
-### 🔹 Legion Mark 2
-
-* Most advanced version
-* Improved performance & design
-* 🎥 Demo: *(Add your YouTube link here)*
-
----
-
+--
 ## 🛠️ Getting Started
 
 ### 🔧 Build Steps
@@ -89,7 +80,7 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 5. Attach servo horns correctly
 6. Complete wiring using circuit diagrams
 7. Upload main code
-8. 🎉 Power ON and test
+8.  Power ON and test
 
 ---
 
@@ -127,16 +118,7 @@ Codes/
         └── servo_config.py      # Initial servo configuration
 ```
 
----
-
-## 🧠 Notes
-
-* 📌 Arduino versions are divided based on hardware setup
-* ⚠️ ESP32 version is still under development
-* 🧠 Raspberry Pi version supports **AI/ML + WiFi control**
-* 🔧 `servo_config` files are important for **initial calibration (90° setup)**
-
-
+--
 
 ## 🧠 Notes
 
