@@ -118,8 +118,6 @@ Codes/
         └── servo_config.py      # Initial servo configuration
 ```
 
---
-
 ## Notes
 
 *  Arduino versions are divided based on hardware setup
@@ -133,10 +131,10 @@ Codes/
 
 ## Resources
 
-* 📦 3D Models → `/3D Files`
-* 🔌 Circuit Diagrams → `/Circuit Diagrams`
-* 📸 Images → `/media`
-* 🧾 Docs → `/Documents`
+*  3D Models → `/3D Files`
+*  Circuit Diagrams → `/Circuit Diagrams`
+*  Images → `/media`
+*  Docs → `/Documents`
 
 ---
 
@@ -167,10 +165,10 @@ Contributions are welcome!
 
 ## Future Scope
 
-* 🗣 Voice control
-* 👁 Computer vision
-* 📱 Mobile app control
-* 🤖 Autonomous movement
+*  Voice control
+*  Computer vision
+*  Mobile app control
+*  Autonomous movement
 
 ---
 
