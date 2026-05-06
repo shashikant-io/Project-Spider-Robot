@@ -1,4 +1,4 @@
-# 🤖 Project Legion Robot
+# Project Legion Robot
 
 ![Robot](https://via.placeholder.com/1200x400?text=Project+Legion+Robot)
 
@@ -17,20 +17,20 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 
 ---
 
-## 🚀 Features
+## Features
 
-* 🤖 12 Degrees of Freedom (DOF)
-* 🔌 Multiple hardware configurations
-* 📡 Serial, I2C, and WiFi-based control
-* 🎥 Live streaming (ESP32-CAM version)
-* 🧠 Ready for AI/ML integration
-* 🧩 Modular and upgrade-friendly design
+*  12 Degrees of Freedom (DOF)
+*  Multiple hardware configurations
+*  Serial, I2C, and WiFi-based control
+*  Live streaming (ESP32-CAM version)
+*  Ready for AI/ML integration
+*  Modular and upgrade-friendly design
 
 ---
 
-## ⚙️ Versions Available
+##  Versions Available
 
-### 🔹 Arduino (Basic)
+###  Arduino (Basic)
 
 * Arduino Nano + Expansion Board
 * Serial Monitor Control
@@ -38,7 +38,7 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 
 ---
 
-### 🔹 Arduino + PCA9685 Servo Driver
+###  Arduino + PCA9685 Servo Driver
 
 * 16-channel servo driver
 * Solves pin limitations
@@ -46,7 +46,7 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 
 ---
 
-### 🔹 Arduino + ESP32-CAM
+### Arduino + ESP32-CAM
 
 * Live video streaming
 * Remote control interface
@@ -54,24 +54,24 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 
 ---
 
-### 🔹 ESP32 Version
+###  ESP32 Version
 
 * Standalone ESP32 control
-* ⚠️ FlexiTimer2 not supported
+*  FlexiTimer2 not supported
 * Open for improvements
 
 ---
 
-### 🔹 Raspberry Pi Version
+### Raspberry Pi Version
 
 * Python-based control
 * Designed for AI/ML integration
 * Uses Raspberry Pi 4
 
 --
-## 🛠️ Getting Started
+##  Getting Started
 
-### 🔧 Build Steps
+###  Build Steps
 
 1. 3D print the robot structure
 2. Choose your preferred version
@@ -84,7 +84,7 @@ A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry
 
 ---
 
-## 📂 Code Structure
+##  Code Structure
 
 Below is the organized structure of the code directory:
 
@@ -120,18 +120,18 @@ Codes/
 
 --
 
-## 🧠 Notes
+## Notes
 
-* 📌 Arduino versions are divided based on hardware setup
-* ⚠️ ESP32 version is still under development
-* 🧠 Raspberry Pi version supports **AI/ML + WiFi control**
-* 🔧 `servo_config` files are important for **initial calibration (90° setup)**
+*  Arduino versions are divided based on hardware setup
+*  ESP32 version is still under development
+*  Raspberry Pi version supports **AI/ML + WiFi control**
+*  `servo_config` files are important for **initial calibration (90° setup)**
 
 
 
 --
 
-## 📁 Resources
+## Resources
 
 * 📦 3D Models → `/3D Files`
 * 🔌 Circuit Diagrams → `/Circuit Diagrams`
@@ -140,7 +140,7 @@ Codes/
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 * Ensure correct servo alignment before powering
 * Double-check wiring connections
@@ -148,14 +148,14 @@ Codes/
 
 ---
 
-## 🙏 Credits
+##  Credits
 
 Inspired by **SunFounder Robot**
 📧 [panerqiang@sunfounder.com](mailto:panerqiang@sunfounder.com)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -165,7 +165,7 @@ Contributions are welcome!
 
 ---
 
-## 🔮 Future Scope
+## Future Scope
 
 * 🗣 Voice control
 * 👁 Computer vision
@@ -174,6 +174,6 @@ Contributions are welcome!
 
 ---
 
-## ⭐ Support
+## Support
 
 If you like this project, consider giving it a ⭐ on GitHub!
