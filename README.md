@@ -6,7 +6,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 
 ---
 
-# 📸 Robot Preview
+#  Robot Preview
 
 > Add your robot images here
 
@@ -16,7 +16,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 
 ---
 
-# 🚀 Features
+#  Features
 
 * 12DOF Quadruped Spider Robot
 * Fully 3D Printed Design
