@@ -1,4 +1,4 @@
-# 🕷️ Project Legion SpiderBot
+# 🕷️ Project SpiderBot
 
 A fully 3D printed 12DOF quadruped spider robot powered by an ESP32 and controlled using a custom mobile application.
 
@@ -33,7 +33,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 
 ---
 
-# 🛠️ Hardware Used
+# Hardware Used
 
 | Component                 | Quantity    |
 | ------------------------- | ----------- |
@@ -47,7 +47,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 
 ---
 
-# 🦿 Robot Structure
+# Robot Structure
 
 Each leg contains:
 
@@ -63,7 +63,7 @@ Each leg contains:
 
 ---
 
-# 📱 Mobile App Functions
+# Mobile App Functions
 
 The custom app supports:
 
@@ -77,7 +77,7 @@ The custom app supports:
 
 ---
 
-# 📂 Included Files
+#  Included Files
 
 ```bash
 body_d.stl
@@ -95,7 +95,7 @@ All required 3D printable files are included in this repository.
 
 ---
 
-# 🖨️ 3D Printing Settings
+# 3D Printing Settings
 
 Recommended print settings:
 
@@ -108,7 +108,7 @@ Supports: Yes (for some parts)
 
 ---
 
-# ⚡ Electronics & Wiring
+#  Electronics & Wiring
 
 * ESP32 controls the PCA9685 Servo Driver
 * Servo Driver controls all 12 servos
@@ -117,7 +117,7 @@ Supports: Yes (for some parts)
 
 ---
 
-# 🔧 Assembly Steps
+#  Assembly Steps
 
 1. Print all STL files
 2. Install servo motors
@@ -132,7 +132,7 @@ Supports: Yes (for some parts)
 
 ---
 
-# 🧠 Future Improvements
+# Future Improvements
 
 * Obstacle Avoidance
 * Ultrasonic Sensor Support
@@ -143,7 +143,7 @@ Supports: Yes (for some parts)
 
 ---
 
-# 🎯 Project Purpose
+# Project Purpose
 
 This project was built for:
 
@@ -155,7 +155,7 @@ This project was built for:
 
 ---
 
-# 🤝 Contributions
+#  Contributions
 
 Contributions are welcome.
 
@@ -169,7 +169,7 @@ You can improve:
 
 ---
 
-# ⭐ Support
+#  Support
 
 If you like this project, consider giving this repository a ⭐.
 
