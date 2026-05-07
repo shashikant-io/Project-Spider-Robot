@@ -1,177 +1,180 @@
-# Project Legion Robot
+# 🕷️ Project Legion SpiderBot
 
-![Robot](https://via.placeholder.com/1200x400?text=Project+Legion+Robot)
+A fully 3D printed 12DOF quadruped spider robot powered by an ESP32 and controlled using a custom mobile application.
 
-![Platform](https://img.shields.io/badge/Platform-Arduino%20%7C%20ESP32%20%7C%20RaspberryPi-blue)
-![Type](https://img.shields.io/badge/Project-Robotics-green)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
-A powerful **12 DOF humanoid robot** built using **Arduino, ESP32, and Raspberry Pi**, designed for modular robotics development, real-time control, and future AI integration.
+This robot can walk, sit, move forward/backward, shake legs, and perform different motion actions using 12 servo motors.
 
 ---
 
-## 📸 Project Preview
+# 📸 Robot Preview
 
-![Preview](https://via.placeholder.com/800x400?text=Robot+Preview)
+> Add your robot images here
 
----
-
-## Features
-
-*  12 Degrees of Freedom (DOF)
-*  Multiple hardware configurations
-*  Serial, I2C, and WiFi-based control
-*  Live streaming (ESP32-CAM version)
-*  Ready for AI/ML integration
-*  Modular and upgrade-friendly design
-
----
-
-##  Versions Available
-
-###  Arduino (Basic)
-
-* Arduino Nano + Expansion Board
-* Serial Monitor Control
-* Beginner-friendly setup
-
----
-
-###  Arduino + PCA9685 Servo Driver
-
-* 16-channel servo driver
-* Solves pin limitations
-* I2C communication (SDA/SCL)
-
----
-
-### Arduino + ESP32-CAM
-
-* Live video streaming
-* Remote control interface
-* Communication via RX/TX
-
----
-
-###  ESP32 Version
-
-* Standalone ESP32 control
-*  FlexiTimer2 not supported
-* Open for improvements
-
----
-
-### Raspberry Pi Version
-
-* Python-based control
-* Designed for AI/ML integration
-* Uses Raspberry Pi 4
-
---
-##  Getting Started
-
-###  Build Steps
-
-1. 3D print the robot structure
-2. Choose your preferred version
-3. Attach servos *(without horns)*
-4. Run `Servo_Config` → set all to **90°**
-5. Attach servo horns correctly
-6. Complete wiring using circuit diagrams
-7. Upload main code
-8.  Power ON and test
-
----
-
-##  Code Structure
-
-Below is the organized structure of the code directory:
-
-```bash
-Codes/
-│
-├── ARDUINO/
-│   ├── Arduino with ESPCam/
-│   │   ├── legionEye        # Upload to Arduino
-│   │   └── legion_ESP       # Upload to ESP32-CAM
-│   │
-│   ├── Arduino with Servo Driver/
-│   │   ├── legion_with_driver
-│   │   └── Servo_Config_driver
-│   │
-│   └── Arduino without Servo Driver/
-│       ├── legion
-│       └── Servo_Config
-│
-├── ESP32/
-│   └── ⚠️ Under development (FlexiTimer2 not supported)
-│
-└── RPI/
-    └── codes/
-        ├── templates/
-        ├── __pycache__/
-        ├── kinematics.py        # Movement calculations
-        ├── main.py              # Demo control script
-        ├── object_detection.py  # Experimental (WIP)
-        ├── server.py            # Flask server for WiFi control
-        └── servo_config.py      # Initial servo configuration
+```md
+![Spider Robot](images/spiderbot.jpg)
 ```
 
-## Notes
+---
 
-*  Arduino versions are divided based on hardware setup
-*  ESP32 version is still under development
-*  Raspberry Pi version supports **AI/ML + WiFi control**
-*  `servo_config` files are important for **initial calibration (90° setup)**
+# 🚀 Features
 
-
-
---
-
-## Resources
-
-*  3D Models → `/3D Files`
-*  Circuit Diagrams → `/Circuit Diagrams`
-*  Images → `/media`
-*  Docs → `/Documents`
+* 12DOF Quadruped Spider Robot
+* Fully 3D Printed Design
+* ESP32 Based Controller
+* PCA9685 Servo Driver Support
+* Custom Mobile App Control
+* Forward & Backward Movement
+* Sit & Stand Motions
+* Front Leg Shake Motion
+* Full Body Shake Motion
+* Smooth Servo Movement Control
+* Modular Design
+* Easy to Upgrade
 
 ---
 
-## Important Notes
+# 🛠️ Hardware Used
 
-* Ensure correct servo alignment before powering
-* Double-check wiring connections
-* Some modules may need updates
-
----
-
-##  Credits
-
-Inspired by **SunFounder Robot**
-📧 [panerqiang@sunfounder.com](mailto:panerqiang@sunfounder.com)
-
----
-
-## Contributing
-
-Contributions are welcome!
-
-* Improve ESP32 timer handling
-* Add AI features
-* Optimize code structure
+| Component                 | Quantity    |
+| ------------------------- | ----------- |
+| ESP32                     | 1           |
+| Servo Motors (SG90/MG90S) | 12          |
+| PCA9685 Servo Driver      | 1           |
+| Battery Pack              | 1           |
+| 3D Printed Parts          | Multiple    |
+| Jumper Wires              | As Required |
+| Switch                    | 1           |
 
 ---
 
-## Future Scope
+# 🦿 Robot Structure
 
-*  Voice control
-*  Computer vision
-*  Mobile app control
-*  Autonomous movement
+Each leg contains:
+
+* Coxa Joint
+* Femur Joint
+* Tibia Joint
+
+### Total Configuration
+
+* 4 Legs
+* 3 Servos Per Leg
+* 12 Degrees of Freedom
 
 ---
 
-## Support
+# 📱 Mobile App Functions
 
-If you like this project, consider giving it a ⭐ on GitHub!
+The custom app supports:
+
+* Move Forward
+* Move Backward
+* Sit Position
+* Stand Position
+* Shake Front Legs
+* Shake All Legs
+* Custom Motions
+
+---
+
+# 📂 Included Files
+
+```bash
+body_d.stl
+body_u.stl
+coxa_l.stl
+coxa_r.stl
+femur_l.stl
+tibia_l.stl
+tibia_r.stl
+s_hold.stl
+spider-open-v1.skp
+```
+
+All required 3D printable files are included in this repository.
+
+---
+
+# 🖨️ 3D Printing Settings
+
+Recommended print settings:
+
+```yaml
+Layer Height: 0.2mm
+Infill: 20% - 40%
+Material: PLA
+Supports: Yes (for some parts)
+```
+
+---
+
+# ⚡ Electronics & Wiring
+
+* ESP32 controls the PCA9685 Servo Driver
+* Servo Driver controls all 12 servos
+* External battery powers the servos
+* ESP32 handles app communication and motion logic
+
+---
+
+# 🔧 Assembly Steps
+
+1. Print all STL files
+2. Install servo motors
+3. Assemble all four legs
+4. Assemble the main body
+5. Connect servos to PCA9685
+6. Connect ESP32 to the servo driver
+7. Upload the code to ESP32
+8. Connect battery power
+9. Pair the mobile app
+10. Start controlling the robot
+
+---
+
+# 🧠 Future Improvements
+
+* Obstacle Avoidance
+* Ultrasonic Sensor Support
+* Camera Module
+* Voice Control
+* Autonomous Walking
+* AI Based Motion System
+
+---
+
+# 🎯 Project Purpose
+
+This project was built for:
+
+* Robotics Learning
+* ESP32 Development
+* 3D Printing Practice
+* Quadruped Motion Study
+* DIY Robotics Projects
+
+---
+
+# 🤝 Contributions
+
+Contributions are welcome.
+
+You can improve:
+
+* Walking algorithms
+* App UI
+* Motion control
+* Power management
+* Autonomous functions
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving this repository a ⭐.
+
+---
+
+# 📜 License
+
+This project is open-source and available under the MIT License.
