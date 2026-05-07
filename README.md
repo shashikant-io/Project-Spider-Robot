@@ -131,7 +131,7 @@ Codes/
 
 ## Resources
 
-*  3D Models → `/3D Files`
+*  3D Models → `/3d files`
 *  Circuit Diagrams → `/Circuit Diagrams`
 *  Images → `/media`
 *  Docs → `/Documents`
