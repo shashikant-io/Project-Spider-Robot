@@ -1,0 +1,201 @@
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+
+// ===============================
+// ESP32 + PCA9685 Spider Robot
+// 12 Servo Control Example
+// ===============================
+
+// I2C Pins for ESP32
+#define SDA_PIN 21
+#define SCL_PIN 22
+
+// Servo Driver Object
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40);
+
+// Servo Pulse Limits
+#define SERVOMIN  100
+#define SERVOMAX  520
+
+// Servo Channels
+// Each leg = Coxa, Femur, Tibia
+const int servo_channels[4][3] = {
+  {0, 1, 2},      // Front Left
+  {4, 5, 6},      // Front Right
+  {8, 9, 10},     // Back Left
+  {12, 13, 14}    // Back Right
+};
+
+// ======================================
+// Convert Angle to PCA9685 Pulse
+// ======================================
+int angleToPulse(int angle) {
+  return map(angle, 0, 180, SERVOMIN, SERVOMAX);
+}
+
+// ======================================
+// Move Single Servo
+// ======================================
+void setServo(int channel, int angle) {
+  int pulse = angleToPulse(angle);
+  pwm.setPWM(channel, 0, pulse);
+}
+
+// ======================================
+// Set All Servos to Same Angle
+// ======================================
+void setAllServos(int angle) {
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 3; j++) {
+      setServo(servo_channels[i][j], angle);
+      delay(10);
+    }
+  }
+}
+
+// ======================================
+// Sit Position
+// ======================================
+void sitPosition() {
+  for (int i = 0; i < 4; i++) {
+
+    // Coxa
+    setServo(servo_channels[i][0], 90);
+
+    // Femur
+    setServo(servo_channels[i][1], 50);
+
+    // Tibia
+    setServo(servo_channels[i][2], 40);
+  }
+}
+
+// ======================================
+// Stand Position
+// ======================================
+void standPosition() {
+  for (int i = 0; i < 4; i++) {
+
+    // Coxa
+    setServo(servo_channels[i][0], 90);
+
+    // Femur
+    setServo(servo_channels[i][1], 90);
+
+    // Tibia
+    setServo(servo_channels[i][2], 90);
+  }
+}
+
+// ======================================
+// Front Leg Shake
+// ======================================
+void shakeFrontLegs() {
+
+  for (int k = 0; k < 3; k++) {
+
+    setServo(servo_channels[0][1], 60);
+    setServo(servo_channels[1][1], 60);
+
+    delay(300);
+
+    setServo(servo_channels[0][1], 110);
+    setServo(servo_channels[1][1], 110);
+
+    delay(300);
+  }
+
+  standPosition();
+}
+
+// ======================================
+// Forward Walk Demo
+// ======================================
+void moveForward() {
+
+  // Lift front left + back right
+  setServo(servo_channels[0][1], 60);
+  setServo(servo_channels[3][1], 60);
+
+  delay(200);
+
+  // Move coxa
+  setServo(servo_channels[0][0], 70);
+  setServo(servo_channels[3][0], 110);
+
+  delay(200);
+
+  // Return
+  standPosition();
+
+  delay(200);
+
+  // Lift front right + back left
+  setServo(servo_channels[1][1], 60);
+  setServo(servo_channels[2][1], 60);
+
+  delay(200);
+
+  // Move coxa
+  setServo(servo_channels[1][0], 110);
+  setServo(servo_channels[2][0], 70);
+
+  delay(200);
+
+  standPosition();
+
+  delay(200);
+}
+
+// ======================================
+// Setup
+// ======================================
+void setup() {
+
+  Serial.begin(115200);
+
+  // Start I2C
+  Wire.begin(SDA_PIN, SCL_PIN);
+
+  // Start PCA9685
+  pwm.begin();
+
+  // 50-60Hz for Servos
+  pwm.setPWMFreq(50);
+
+  delay(1000);
+
+  Serial.println("Spider Robot Ready");
+
+  // Initial Position
+  standPosition();
+}
+
+// ======================================
+// Main Loop
+// ======================================
+void loop() {
+
+  // Stand
+  standPosition();
+  delay(2000);
+
+  // Sit
+  sitPosition();
+  delay(2000);
+
+  // Stand Again
+  standPosition();
+  delay(1000);
+
+  // Shake Legs
+  shakeFrontLegs();
+  delay(1000);
+
+  // Move Forward
+  for (int i = 0; i < 4; i++) {
+    moveForward();
+  }
+
+  delay(2000);
+}
