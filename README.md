@@ -7,11 +7,9 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 ---
 
 #  Robot Preview
-
-> Add your robot images here
-
-```md
-![Spider Robot](3d spider.jpeg)
+<p align="center">
+  <img src="https://github.com/shashikant-io/ESP32-Smart-Home-Automation-System/blob/main/Smart%20Phone%20UI" width="300"/>
+</p>
 ```
 
 ---
