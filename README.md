@@ -10,7 +10,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 <p align="center">
   <img src="https://github.com/shashikant-io/Project-Spider-Robot/blob/main/3d%20spider%20.jpeg" width="300"/>
 </p>
-```
+
 
 ---
 
