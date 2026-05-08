@@ -11,7 +11,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 > Add your robot images here
 
 ```md
-![Spider Robot](images/spiderbot.jpg)
+![Spider Robot](3d spider.jpeg)
 ```
 
 ---
