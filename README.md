@@ -1,6 +1,6 @@
 # 🕷️ Project SpiderBot
 
-A fully 3D printed 12DOF quadruped spider robot powered by an ESP32 and controlled using a custom mobile application.
+A fully 3D printed 12 DOF quadruped spider robot powered by an ESP32 and controlled using a custom mobile application.
 
 This robot can walk, sit, move forward/backward, shake legs, and perform different motion actions using 12 servo motors.
 
@@ -127,29 +127,6 @@ Supports: Yes (for some parts)
 8. Connect battery power
 9. Pair the mobile app
 10. Start controlling the robot
-
----
-
-# Future Improvements
-
-* Obstacle Avoidance
-* Ultrasonic Sensor Support
-* Camera Module
-* Voice Control
-* Autonomous Walking
-* AI Based Motion System
-
----
-
-# Project Purpose
-
-This project was built for:
-
-* Robotics Learning
-* ESP32 Development
-* 3D Printing Practice
-* Quadruped Motion Study
-* DIY Robotics Projects
 
 ---
 
