@@ -146,9 +146,6 @@ You can improve:
 
 #  Support
 
-If you like this project, consider giving this repository a ⭐.
-
----
 
 # 📜 License
 
