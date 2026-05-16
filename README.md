@@ -139,6 +139,8 @@ You can improve:
 * Walking algorithms
 * App UI
 * Motion control
+  Final model uploading soon
+  
 * Power management
 * Autonomous functions
 
