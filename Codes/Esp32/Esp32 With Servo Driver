@@ -178,7 +178,7 @@ void loop() {
 
   // Stand
   standPosition();
-  delay(2000);
+  delay(3000);
 
   // Sit
   sitPosition();
@@ -197,6 +197,6 @@ void loop() {
     moveForward();
   }
 
-  delay(2000);
+  delay(3000);
 }
-follow for more
+
