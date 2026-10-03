@@ -38,7 +38,7 @@ This robot can walk, sit, move forward/backward, shake legs, and perform differe
 | ESP32                     | 1           |
 | Servo Motors (SG90/MG90S) | 12          |
 | PCA9685 Servo Driver      | 1           |
-| Battery Pack              | 1           |
+| Battery Pack/charging pot | 1           |
 | 3D Printed Parts          | Multiple    |
 | Jumper Wires              | As Required |
 | Switch                    | 1           |
